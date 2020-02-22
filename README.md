@@ -6,6 +6,15 @@
 - Layout class/ code like `.row` `.col-md-6` in bootstrap etc. should be separated from the UI component
 - Never change codes that is not related to the feature you are doing, instead you should go to github and create issue base on the bug you found.
 
+### Pre-requests
+
+- **Node.js** installed -> [Download](https://nodejs.org/en/)
+- **gatsby-cli** installed -> `npm i -g gatsby-cli`
+
+### How to start web-server
+
+- `gatsby develop`
+
 ### Do this every time when you start working
 
 1. use command `git fetch`
