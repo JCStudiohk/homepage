@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import './variables';
 
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
@@ -27,4 +29,15 @@
 }
 
 html {
+  font-size: calc(0.5em + 0.5vw);
+  body {
+    font-family: 'Montserrat';
+  }
 }
+
+.orbitron {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';

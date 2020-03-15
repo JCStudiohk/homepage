@@ -1,0 +1,27 @@
+.js-card {
+  img {
+    width: 50%;
+    margin-bottom: 3.5rem;
+  }
+
+  p {
+    max-width: 300px;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .js-card {
+    margin-bottom: 3rem;
+
+    img {
+      margin-top: 2rem;
+      width: 25%;
+    }
+
+    p {
+      max-width: 200px;
+      margin: auto;
+    }
+  }
+}

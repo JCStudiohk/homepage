@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/variables';
+
+.service-card {
+  border-radius: 20px;
+  padding: 1.5rem;
+  min-height: 450px;
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 190px;
+    }
+  }
+
+  h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.05em;
+    line-height: 1.8rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .service-card {
+    max-width: 220px;
+    margin: auto;
+    min-height: 0;
+    .img-container {
+      display: block;
+      img {
+        height: 100px;
+      }
+    }
+
+    h3,
+    p {
+      text-align: center !important;
+    }
+  }
+}

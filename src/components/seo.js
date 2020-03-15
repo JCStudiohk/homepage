@@ -8,24 +8,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  );
+  const defaultDescription =
+    'We, JC Studio, are a professional website and mobile application company which aims to provide IT solutions to companies to enhance their business. WhatsApp Now to +852 6258 3690 for details';
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || defaultDescription;
 
   return (
     <Helmet
@@ -33,7 +21,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | JC Studio`}
       meta={[
         {
           name: `description`,
@@ -57,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: 'JC Studio Co.',
         },
         {
           name: `twitter:title`,

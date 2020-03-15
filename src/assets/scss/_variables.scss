@@ -1,0 +1,35 @@
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 12px;
+$max_font: 20px;
+
+$primary: #af143a;
+$secondary: #202020;
+$caption: #919ba0;
+
+$border: #707070;
+
+$orange: #e62823;
+
+$bg-gradient-primary: linear-gradient($primary, $orange);
+$bg-gradient-secondary: linear-gradient(#414141, #292929);
+$bg-gradient-primary-reverse: linear-gradient($orange, $primary);
+
+.bg-gradient-primary {
+  background-image: $bg-gradient-primary;
+
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+
+  &:hover {
+    background-image: $bg-gradient-primary-reverse;
+  }
+}
+
+.bg-gradient-secondary {
+  background-image: $bg-gradient-secondary;
+}
+
+.text-caption {
+  color: $caption;
+}

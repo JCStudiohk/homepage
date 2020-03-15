@@ -1,0 +1,22 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+
+  li {
+    margin-right: 0.5rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-list {
+      text-align: center !important;
+      padding: 1.2rem;
+
+      li {
+        margin-right: 0;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
