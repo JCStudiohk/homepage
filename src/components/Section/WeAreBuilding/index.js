@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import { BgContainer, Title, Subtitle } from '../../Hero';
-import { Animation } from '../../Hero/Animation';
 
 export const Building = () => {
   return (
@@ -11,26 +9,24 @@ export const Building = () => {
           <Title center>Website development in progress</Title>
           <Subtitle center>
             Please follow our{' '}
-            <Link
-              to="https://www.instagram.com/jcstudio_hk/?hl=zh-hk"
+            <a
+              href="https://www.instagram.com/jcstudio_hk/?hl=zh-hk"
               target="_blank"
               rel="noopener noreferrer"
             >
               Instagram
-            </Link>{' '}
+            </a>{' '}
             and{' '}
-            <Link
-              to="https://www.facebook.com/JCStudioHK/"
+            <a
+              href="https://www.facebook.com/JCStudioHK/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Facebook
-            </Link>{' '}
+            </a>{' '}
             for latest news
           </Subtitle>
         </div>
-
-        <Animation />
       </div>
     </BgContainer>
   );

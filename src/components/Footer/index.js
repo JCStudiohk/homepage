@@ -6,7 +6,7 @@ import {
   faEnvelope,
   faPhoneAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './index.scss';
 
@@ -17,7 +17,7 @@ export const Footer = () => {
         <div className="container">
           <h3 className="text-white">Contact Us</h3>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-4">
               <div className="item d-flex">
                 <FontAwesomeIcon icon={faGlobe} color={'#af143a'} size="lg" />
                 <Link to="https://jcstudio.hk" className="text-white ml-4">
@@ -35,7 +35,7 @@ export const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-4">
               <div className="item d-flex">
                 <FontAwesomeIcon
                   icon={faPhoneAlt}
@@ -52,14 +52,31 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <Link
-                  to="https://www.facebook.com/JCStudioHK/"
+                <a
+                  href="https://www.facebook.com/JCStudioHK/"
                   className="text-white ml-4"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   @JCStudioHK
-                </Link>
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="item d-flex">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  color={'#af143a'}
+                  size="lg"
+                />
+                <a
+                  href="https://www.instagram.com/jcstudio_hk/?hl=zh-hk"
+                  className="text-white ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  jcstudio_hk
+                </a>
               </div>
             </div>
           </div>
