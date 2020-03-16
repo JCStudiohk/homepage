@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 import { NavbarComponent } from './navigation/Navbar';
 
 import '../assets/scss/main.scss';
+import 'animate.css/animate.min.css';
 
 const Layout = ({ children }) => {
   return (

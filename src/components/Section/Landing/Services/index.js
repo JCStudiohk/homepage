@@ -2,6 +2,7 @@ import React from 'react';
 import { Section } from '../../../custom/Section';
 import { Card } from './Card';
 import { services } from '../../../../constants/card';
+import Fade from 'react-reveal/Fade';
 
 export const Services = () => {
   return (
@@ -10,7 +11,9 @@ export const Services = () => {
         <div className="row">
           {services.map((service, index) => (
             <div className="col-md-4" key={index}>
-              <Card {...service} />
+              <Fade ssrReveal down delay={index * 200} duration={1500}>
+                <Card {...service} />
+              </Fade>
             </div>
           ))}
         </div>
