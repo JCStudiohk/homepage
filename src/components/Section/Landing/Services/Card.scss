@@ -4,6 +4,12 @@
   border-radius: 20px;
   padding: 1.5rem;
   min-height: 450px;
+  // cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   .img-container {
     display: flex;

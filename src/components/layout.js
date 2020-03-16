@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { NavbarComponent } from './navigation/Navbar';
+import { Footer } from './Footer';
 
 import '../assets/scss/main.scss';
 import 'animate.css/animate.min.css';
@@ -18,11 +19,7 @@ const Layout = ({ children }) => {
     <>
       <NavbarComponent />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built by
-        {` `}
-        JC Studio
-      </footer>
+      <Footer />
     </>
   );
 };

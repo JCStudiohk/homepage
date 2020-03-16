@@ -30,28 +30,22 @@ export const NavbarComponent = () => {
           <Collapse isOpen={isNavbarOpen} navbar>
             <Nav className="ml-auto nav-list" navbar>
               <NavItem>
-                <NavLink href="/components/" className="text-white">
+                <NavLink href="/" className="text-white">
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  href="https://github.com/reactstrap/reactstrap"
-                  className="text-white"
-                >
+                <NavLink href="/development" className="text-white">
                   About
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/" className="text-white">
+                <NavLink href="/development" className="text-white">
                   Pricing
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  href="https://github.com/reactstrap/reactstrap"
-                  className="text-white"
-                >
+                <NavLink href="/development" className="text-white">
                   Contact
                 </NavLink>
               </NavItem>
