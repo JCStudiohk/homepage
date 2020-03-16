@@ -3,6 +3,7 @@ module.exports = {
     title: `JC Studio Co.`,
     description: `Next generation of Website Development`,
     author: `JC Studio Co.`,
+    siteUrl: 'https://jcstudio.hk',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
