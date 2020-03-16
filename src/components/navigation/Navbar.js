@@ -6,10 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   NavbarText,
   Container,
 } from 'reactstrap';
+import Link from 'gatsby-link';
 import './Navbar.scss';
 import src from '../../assets/images/logo@4x.png';
 
@@ -30,24 +30,24 @@ export const NavbarComponent = () => {
           <Collapse isOpen={isNavbarOpen} navbar>
             <Nav className="ml-auto nav-list" navbar>
               <NavItem>
-                <NavLink href="/" className="text-white">
+                <Link to="/" className="text-white nav-link">
                   Home
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/development" className="text-white">
+                <Link to="/development" className="text-white nav-link">
                   About
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/development" className="text-white">
+                <Link to="/development" className="text-white nav-link">
                   Pricing
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/development" className="text-white">
+                <Link to="/development" className="text-white nav-link">
                   Contact
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
                 <button className="btn bg-gradient-primary text-white round-circle">

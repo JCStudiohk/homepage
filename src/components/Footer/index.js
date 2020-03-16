@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'gatsby-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGlobe,
@@ -20,9 +20,9 @@ export const Footer = () => {
             <div className="col-md-6">
               <div className="item d-flex">
                 <FontAwesomeIcon icon={faGlobe} color={'#af143a'} size="lg" />
-                <a href="https://jcstudio.hk" className="text-white ml-4">
+                <Link to="https://jcstudio.hk" className="text-white ml-4">
                   https://jcstudio.hk
-                </a>
+                </Link>
               </div>
               <div className="item d-flex">
                 <FontAwesomeIcon
@@ -30,9 +30,9 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <a href="mailto:info@jcstudio.hk" className="text-white ml-4">
+                <Link to="mailto:info@jcstudio.hk" className="text-white ml-4">
                   info@jcstudio.hk
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-6">
@@ -42,9 +42,9 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <a href="tel:85262583690" className="text-white ml-4">
+                <Link to="tel:85262583690" className="text-white ml-4">
                   +852 6258 3690
-                </a>
+                </Link>
               </div>
               <div className="item d-flex">
                 <FontAwesomeIcon
@@ -52,14 +52,14 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <a
-                  href="https://www.facebook.com/JCStudioHK/"
+                <Link
+                  to="https://www.facebook.com/JCStudioHK/"
                   className="text-white ml-4"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   @JCStudioHK
-                </a>
+                </Link>
               </div>
             </div>
           </div>
