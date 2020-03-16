@@ -30,9 +30,14 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <Link to="mailto:info@jcstudio.hk" className="text-white ml-4">
+                <a
+                  href="mailto:info@jcstudio.hk"
+                  className="text-white ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   info@jcstudio.hk
-                </Link>
+                </a>
               </div>
             </div>
             <div className="col-md-4">
@@ -42,9 +47,14 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <Link to="tel:85262583690" className="text-white ml-4">
+                <a
+                  href="tel:85262583690"
+                  className="text-white ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   +852 6258 3690
-                </Link>
+                </a>
               </div>
               <div className="item d-flex">
                 <FontAwesomeIcon
