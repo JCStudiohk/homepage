@@ -6,7 +6,7 @@ import {
   faEnvelope,
   faPhoneAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './index.scss';
 
@@ -17,7 +17,7 @@ export const Footer = () => {
         <div className="container">
           <h3 className="text-white">Contact Us</h3>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-4">
               <div className="item d-flex">
                 <FontAwesomeIcon icon={faGlobe} color={'#af143a'} size="lg" />
                 <Link to="/" className="text-white ml-4">
@@ -30,19 +30,29 @@ export const Footer = () => {
                   color={'#af143a'}
                   size="lg"
                 />
-                <a href="mailto:info@jcstudio.hk" className="text-white ml-4">
+                <a
+                  href="mailto:info@jcstudio.hk"
+                  className="text-white ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   info@jcstudio.hk
                 </a>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-4">
               <div className="item d-flex">
                 <FontAwesomeIcon
                   icon={faPhoneAlt}
                   color={'#af143a'}
                   size="lg"
                 />
-                <a href="tel:85262583690" className="text-white ml-4">
+                <a
+                  href="tel:85262583690"
+                  className="text-white ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   +852 6258 3690
                 </a>
               </div>
@@ -59,6 +69,23 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   @JCStudioHK
+                </a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="item d-flex">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  color={'#af143a'}
+                  size="lg"
+                />
+                <a
+                  href="https://www.instagram.com/jcstudio_hk/?hl=zh-hk"
+                  className="text-white ml-4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  jcstudio_hk
                 </a>
               </div>
             </div>

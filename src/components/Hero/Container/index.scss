@@ -18,6 +18,9 @@
   &.bg-building {
     background-image: url('../../../assets/images/building/we_are_building.png');
   }
+  &.bg-not-found {
+    background-image: url('../../../assets/images/404/not_found.jpg');
+  }
 
   button {
     font-size: 1.2em;

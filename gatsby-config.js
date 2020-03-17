@@ -3,6 +3,7 @@ module.exports = {
     title: `JC Studio Co.`,
     description: `Next generation of Website Development`,
     author: `JC Studio Co.`,
+    siteUrl: 'https://jcstudio.hk',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +29,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

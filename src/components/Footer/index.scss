@@ -9,6 +9,18 @@ footer {
 
   .item {
     margin-bottom: 1rem;
+    align-items: center;
+    a {
+      font-size: 1.2em;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .item {
+      a {
+        font-size: 1.6em;
+      }
+    }
   }
 }
 

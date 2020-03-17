@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { BgContainer, Title, Subtitle } from '../../Hero';
-import { Animation } from '../../Hero/Animation';
 
 export const Building = () => {
   return (
@@ -29,8 +28,6 @@ export const Building = () => {
             for latest news
           </Subtitle>
         </div>
-
-        <Animation />
       </div>
     </BgContainer>
   );

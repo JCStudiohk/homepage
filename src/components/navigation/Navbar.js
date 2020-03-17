@@ -12,6 +12,8 @@ import Link from 'gatsby-link';
 import './Navbar.scss';
 import src from '../../assets/images/logo@4x.png';
 
+import { whatsappMe } from '../helpers/functions/WhatsAppMe';
+
 export const NavbarComponent = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
@@ -51,7 +53,10 @@ export const NavbarComponent = () => {
                 </Link>
               </NavItem>
               <NavItem>
-                <button className="btn bg-gradient-primary text-white round-circle">
+                <button
+                  className="btn bg-gradient-primary text-white round-circle"
+                  onClick={whatsappMe}
+                >
                   Try it Now
                 </button>
               </NavItem>

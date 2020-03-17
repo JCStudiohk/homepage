@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { init } from './function';
 
 export const Animation = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
   useEffect(() => {
-    const update = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', update);
-    return () => {
-      window.removeEventListener('resize', update);
-    };
+    if (typeof window !== 'undefined') {
+      const update = () => setWidth(window.innerWidth);
+      update();
+      window.addEventListener('resize', update);
+      return () => {
+        window.removeEventListener('resize', update);
+      };
+    }
   }, []);
   useEffect(() => {
     init();
