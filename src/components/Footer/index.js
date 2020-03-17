@@ -20,7 +20,7 @@ export const Footer = () => {
             <div className="col-md-4">
               <div className="item d-flex">
                 <FontAwesomeIcon icon={faGlobe} color={'#af143a'} size="lg" />
-                <Link to="https://jcstudio.hk" className="text-white ml-4">
+                <Link to="/" className="text-white ml-4">
                   https://jcstudio.hk
                 </Link>
               </div>

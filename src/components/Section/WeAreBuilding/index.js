@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import { BgContainer, Title, Subtitle } from '../../Hero';
 
 export const Building = () => {
@@ -9,21 +10,21 @@ export const Building = () => {
           <Title center>Website development in progress</Title>
           <Subtitle center>
             Please follow our{' '}
-            <a
-              href="https://www.instagram.com/jcstudio_hk/?hl=zh-hk"
+            <Link
+              to="https://www.instagram.com/jcstudio_hk/?hl=zh-hk"
               target="_blank"
               rel="noopener noreferrer"
             >
               Instagram
-            </a>{' '}
+            </Link>{' '}
             and{' '}
-            <a
-              href="https://www.facebook.com/JCStudioHK/"
+            <Link
+              to="https://www.facebook.com/JCStudioHK/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Facebook
-            </a>{' '}
+            </Link>{' '}
             for latest news
           </Subtitle>
         </div>
