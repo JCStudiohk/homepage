@@ -3,7 +3,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavbarText,
@@ -22,10 +21,12 @@ export const NavbarComponent = () => {
     <header>
       <Navbar color="secondary" dark expand="md" className="py-2">
         <Container>
-          <NavbarBrand href="/">
+          <div class="navbar-brand">
+          <Link to="/">
             <img src={src} alt="" className="mr-4 img-fluid" />
             <NavbarText className="orbitron text-primary">JC STUDIO</NavbarText>
-          </NavbarBrand>
+          </Link>
+          </div>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isNavbarOpen} navbar>
             <Nav className="ml-auto nav-list" navbar>
